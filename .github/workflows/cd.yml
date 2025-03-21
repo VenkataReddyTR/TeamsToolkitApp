@@ -37,6 +37,8 @@ jobs:
           --interactive false
 
       - name: Deploy to hosting environment
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
           npx teamsapp deploy --ignore-env-file true \
           --interactive false
