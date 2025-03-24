@@ -38,7 +38,7 @@ jobs:
 
       - name: Deploy to hosting environment
         run: |
-          npx teamsapp entra-app update 
+          npx teamsapp entra-app update --manifest-path appPackage/aadManifest.json
 
       - name: Package app
         run: |
