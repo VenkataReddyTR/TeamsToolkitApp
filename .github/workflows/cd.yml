@@ -36,11 +36,17 @@ jobs:
           --password ${{secrets.AZURE_SERVICE_PRINCIPAL_CLIENT_SECRET }} \
           --interactive false
 
+      - name: Provision the resources
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}
+        run: |
+          npx teamsapp provision --ignore-env-file true \
+          --interactive false
+
       - name: Deploy to hosting environment
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          npx teamsapp provision --ignore-env-file true --interactive false
           npx teamsapp deploy --ignore-env-file true \
           --interactive false
 
