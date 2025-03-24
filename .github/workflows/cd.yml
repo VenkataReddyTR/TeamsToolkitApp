@@ -40,8 +40,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_PAT }}
         run: |
-          npx teamsapp provision --ignore-env-file true \ 
-          --interactive false
+          npx teamsapp provision --ignore-env-file true --interactive false
           npx teamsapp deploy --ignore-env-file true \
           --interactive false
 
