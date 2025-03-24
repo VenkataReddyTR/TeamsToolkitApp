@@ -1,88 +1,88 @@
 {
-  "id": "bb4ff3bb-6081-46f9-88b7-a358d8ab3011",
-  "deletedDateTime": null,
-  "appId": "88bab019-7095-4ede-a006-abbbc5606bc8",
-  "applicationTemplateId": null,
-  "disabledByMicrosoftStatus": null,
-  "createdDateTime": "2025-03-24T16:50:58Z",
-  "displayName": "Test_Bot_Reg_app",
-  "description": null,
-  "groupMembershipClaims": null,
-  "identifierUris": [],
-  "isDeviceOnlyAuthSupported": null,
-  "isFallbackPublicClient": null,
-  "nativeAuthenticationApisEnabled": null,
-  "notes": null,
-  "publisherDomain": "TRTEN.onmicrosoft.com",
-  "serviceManagementReference": null,
-  "signInAudience": "AzureADMyOrg",
-  "tags": [],
-  "tokenEncryptionKeyId": null,
-  "samlMetadataUrl": null,
-  "defaultRedirectUri": null,
-  "certification": null,
-  "optionalClaims": null,
-  "requestSignatureVerification": null,
-  "addIns": [],
-  "api": {
-    "acceptMappedClaims": null,
-    "knownClientApplications": [],
-    "requestedAccessTokenVersion": null,
-    "oauth2PermissionScopes": [],
-    "preAuthorizedApplications": []
-  },
-  "appRoles": [],
-  "info": {
-    "logoUrl": null,
-    "marketingUrl": null,
-    "privacyStatementUrl": null,
-    "supportUrl": null,
-    "termsOfServiceUrl": null
-  },
-  "keyCredentials": [],
-  "parentalControlSettings": {
-    "countriesBlockedForMinors": [],
-    "legalAgeGroupRule": "Allow"
-  },
-  "passwordCredentials": [],
-  "publicClient": {
-    "redirectUris": []
-  },
-  "requiredResourceAccess": [
-    {
-      "resourceAppId": "00000003-0000-0000-c000-000000000000",
-      "resourceAccess": [
-        {
-          "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
-          "type": "Scope"
-        }
-      ]
-    }
-  ],
-  "verifiedPublisher": {
-    "displayName": null,
-    "verifiedPublisherId": null,
-    "addedDateTime": null
-  },
-  "web": {
-    "homePageUrl": null,
-    "logoutUrl": null,
-    "redirectUris": [],
-    "implicitGrantSettings": {
-      "enableAccessTokenIssuance": false,
-      "enableIdTokenIssuance": false
+    "id": "bb4ff3bb-6081-46f9-88b7-a358d8ab3011",
+    "deletedDateTime": null,
+    "appId": "88bab019-7095-4ede-a006-abbbc5606bc8",
+    "applicationTemplateId": null,
+    "disabledByMicrosoftStatus": null,
+    "createdDateTime": "2025-03-24T16:50:58Z",
+    "displayName": "Test_Bot_Reg_app",
+    "description": null,
+    "groupMembershipClaims": null,
+    "identifierUris": [],
+    "isDeviceOnlyAuthSupported": null,
+    "isFallbackPublicClient": null,
+    "nativeAuthenticationApisEnabled": null,
+    "notes": null,
+    "publisherDomain": "TRTEN.onmicrosoft.com",
+    "serviceManagementReference": null,
+    "signInAudience": "AzureADMyOrg",
+    "tags": [],
+    "tokenEncryptionKeyId": null,
+    "samlMetadataUrl": null,
+    "defaultRedirectUri": null,
+    "certification": null,
+    "optionalClaims": null,
+    "requestSignatureVerification": null,
+    "addIns": [],
+    "api": {
+        "acceptMappedClaims": null,
+        "knownClientApplications": [],
+        "requestedAccessTokenVersion": null,
+        "oauth2PermissionScopes": [],
+        "preAuthorizedApplications": []
     },
-    "redirectUriSettings": []
-  },
-  "servicePrincipalLockConfiguration": {
-    "isEnabled": true,
-    "allProperties": true,
-    "credentialsWithUsageVerify": true,
-    "credentialsWithUsageSign": true,
-    "identifierUris": false,
-    "tokenEncryptionKeyId": true
-  },
-  "spa": {
-    "redirectUris": []
-  }
+    "appRoles": [],
+    "info": {
+        "logoUrl": null,
+        "marketingUrl": null,
+        "privacyStatementUrl": null,
+        "supportUrl": null,
+        "termsOfServiceUrl": null
+    },
+    "keyCredentials": [],
+    "parentalControlSettings": {
+        "countriesBlockedForMinors": [],
+        "legalAgeGroupRule": "Allow"
+    },
+    "passwordCredentials": [],
+    "publicClient": {
+        "redirectUris": []
+    },
+    "requiredResourceAccess": [
+        {
+            "resourceAppId": "00000003-0000-0000-c000-000000000000",
+            "resourceAccess": [
+                {
+                    "id": "e1fe6dd8-ba31-4d61-89e7-88639da4683d",
+                    "type": "Scope"
+                }
+            ]
+        }
+    ],
+    "verifiedPublisher": {
+        "displayName": null,
+        "verifiedPublisherId": null,
+        "addedDateTime": null
+    },
+    "web": {
+        "homePageUrl": null,
+        "logoutUrl": null,
+        "redirectUris": [],
+        "implicitGrantSettings": {
+            "enableAccessTokenIssuance": false,
+            "enableIdTokenIssuance": false
+        },
+        "redirectUriSettings": []
+    },
+    "servicePrincipalLockConfiguration": {
+        "isEnabled": true,
+        "allProperties": true,
+        "credentialsWithUsageVerify": true,
+        "credentialsWithUsageSign": true,
+        "identifierUris": false,
+        "tokenEncryptionKeyId": true
+    },
+    "spa": {
+        "redirectUris": []
+    }
 }
