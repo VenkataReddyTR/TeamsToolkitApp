@@ -38,7 +38,7 @@ jobs:
 
       - name: Deploy to hosting environment
         run: |
-          npx teamsapp deploy --ignore-env-file true \
+          npx teamsapp entra-app update --ignore-env-file true \
           --interactive false
 
       - name: Package app

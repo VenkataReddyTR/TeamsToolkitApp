@@ -81,7 +81,7 @@ deploy:
   - uses: cli/runNpmCommand
     name: perform entra-app
     with:
-      args: npx teamsapp entra-app update 
+      args: teamsapp entra-app update 
 
     
 
