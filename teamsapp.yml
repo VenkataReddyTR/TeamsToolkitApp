@@ -81,7 +81,7 @@ deploy:
   - uses: teamsApp/update
     env:
       M365_CLIENT_ID: "5ed88b97-60f8-4211-bd7a-1d64a3667c7f"
-      M365_CLIENT_SECRET: ${{secrets.AZURE_SERVICE_PRINCIPAL_CLIENT_SECRET }}
+      M365_CLIENT_SECRET: "_Xk8Q~t2YCo0w15FsoUw4QfzFJx_Xqnvtk-c0b.C"
       M365_TENANT_ID: "62ccb864-6a1a-4b5d-8e1c-397dec1a8258"
     
     with:
