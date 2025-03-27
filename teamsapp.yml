@@ -11,7 +11,7 @@ provision:
   - uses: teamsApp/create
     with:
       # Teams app name
-      name: TeamsToolkitApp${{APP_NAME_SUFFIX}}
+      name: Test_Bot_1${{APP_NAME_SUFFIX}}
     # Write the information of created resources into environment file for
     # the specified environment variable(s).
     writeToEnvironmentFile:
@@ -78,10 +78,13 @@ deploy:
     name: build app
     with:
       args: run build --if-present
-  - uses: cli/runNpmCommand
-    name: perform entra-app
+  - uses: teamsApp/update
+    env:
+      M365_CLIENT_ID: "5ed88b97-60f8-4211-bd7a-1d64a3667c7f"
+      M365_CLIENT_SECRET: "_Xk8Q~t2YCo0w15FsoUw4QfzFJx_Xqnvtk-c0b.C"
+      M365_TENANT_ID: "62ccb864-6a1a-4b5d-8e1c-397dec1a8258"
     with:
-      args: teamsapp entra-app update 
+      appPackagePath: "./path/to/teamsAppPackage.zip" 
 
     
 

@@ -5,6 +5,7 @@
 	"applicationTemplateId": null,
 	"disabledByMicrosoftStatus": null,
 	"createdDateTime": "2025-03-24T16:50:58Z",
+  "name": "Test_Bot_Reg_app",
 	"displayName": "Test_Bot_Reg_app",
 	"description": null,
 	"groupMembershipClaims": null,

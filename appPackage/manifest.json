@@ -14,7 +14,7 @@
     "outline": "outline.png"
   },
   "name": {
-    "short": "TeamsToolkitApp${{APP_NAME_SUFFIX}}",
+    "short": "Test_Bot_1${{APP_NAME_SUFFIX}}",
     "full": "full name for TeamsToolkitApp"
   },
   "description": {
