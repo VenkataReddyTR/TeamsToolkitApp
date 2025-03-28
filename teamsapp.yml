@@ -79,6 +79,10 @@ deploy:
     with:
       args: run build --if-present
   - uses: teamsApp/update
+    env:
+      M365_CLIENT_ID: "7b80bbcb-aee7-41e0-ac3a-552c28a69522"
+      M365_CLIENT_SECRET: "SAA8Q~3m2nBLIm_zhb~p2WIe7bXD3zGB5jT2ldpk"
+      M365_TENANT_ID: "e205bfab-7c3a-4369-86f3-030001469257"
     with:
       appPackagePath: "./path/to/teamsAppPackage.zip" 
 
