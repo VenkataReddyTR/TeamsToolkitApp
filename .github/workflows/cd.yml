@@ -38,6 +38,13 @@ jobs:
 
       - name: Deploy to hosting environment
         run: |
+          npx teamsapp auth login azure --username ${{vars.AZURE_SERVICE_PRINCIPAL_CLIENT_ID}}  \
+          --service-principal true \
+          --tenant ${{vars.AZURE_TENANT_ID}} \
+          --password ${{secrets.AZURE_SERVICE_PRINCIPAL_CLIENT_SECRET }} \
+          --interactive false
+
+          # Depoly to Azure
           npx teamsapp deploy --ignore-env-file true \
             --interactive false
 
