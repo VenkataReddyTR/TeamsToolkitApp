@@ -37,7 +37,7 @@ jobs:
            --interactive false
 
       - name: Login to Microsoft 365
-        uses: microsoft/teamsfx-cli-action@v1
+        uses: OfficeDev/teamsfx-cli-action@v1
         with:
           action: login:m365
           service-principal: true
