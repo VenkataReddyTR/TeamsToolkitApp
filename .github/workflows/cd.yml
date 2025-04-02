@@ -39,8 +39,9 @@ jobs:
       - name: Provision Teams App
         run: npx teamsapp provision
         env:
-          AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
-          AZURE_TENANT_ID: ${{ secrets.M365_TENANT_ID }}
+          M365_CLIENT_ID: ${{ secrets.M365_APP_ID }}
+          M365_TENANT_ID: ${{ secrets.M365_TENANT_ID }}
+          M365_PASSWORD: ${{ secrets.M365_APP_PASSWORD }}
 
       - name: Deploy to hosting environment
         run: |
