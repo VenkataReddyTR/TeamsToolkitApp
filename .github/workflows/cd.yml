@@ -36,14 +36,8 @@ jobs:
            --password ${{secrets.AZURE_SERVICE_PRINCIPAL_CLIENT_SECRET }} \
            --interactive false
 
-      - name: Login to Microsoft 365
-        uses: OfficeDev/teamsfx-cli-action@v1
-        with:
-          args: login m365 --service-principal --username ${{ secrets.M365_APP_ID }} --password ${{ secrets.M365_APP_PASSWORD }} --tenant ${{ secrets.M365_TENANT_ID }}
-
       - name: Provision Teams App
-        run: npx teamsapp provision --ignore-env-file true \
-            --interactive false
+        run: npx teamsapp provision
         env:
           AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID }}
           AZURE_TENANT_ID: ${{ secrets.M365_TENANT_ID }}
